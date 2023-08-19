@@ -1,0 +1,11 @@
+<article class="flex">
+    <section>
+        <h2>{{ Pais?.pais }}</h2>
+        <p>{{ Pais?.cidade }}, {{ Pais?.regiao }}</p>
+    </section>
+    <section>
+        <h2>Sobre</h2>
+        <p>{{ Pais?.descricao }}</p>
+    </section>
+    <img class="foto" [src]="Pais?.foto" alt="{{ Pais?.pais }}" />
+</article>
