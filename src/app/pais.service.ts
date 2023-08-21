@@ -5,7 +5,7 @@ import { Pais } from './Pais';
   providedIn: 'root',
 })
 export class PaisService {
-  readonly baseUrl = '../assets/';
+  readonly baseUrl = '../assets/cidades/';
 
   protected PaisList: Pais[] = [
     {
@@ -103,6 +103,102 @@ export class PaisService {
       custodevida: 'R$2700-R$5000+ Reais',
       descricao:
         'A Argentina é um destino apaixonante para nômades digitais, com uma mistura envolvente de cultura, história e vastidão geográfica. Buenos Aires, a capital, oferece uma atmosfera artística e animada, além de uma crescente cena de coworking e tecnologia. A rica cultura argentina é refletida na dança do tango, na culinária famosa por seus bifes e na paixão pelo futebol. Além disso, as vastas paisagens que vão desde as montanhas da Patagônia até as vinícolas de Mendoza oferecem oportunidades emocionantes para explorar a natureza e a aventura. Com uma abordagem descontraída da vida, a Argentina oferece aos nômades digitais uma experiência única, equilibrando trabalho, cultura e lazer de maneira harmoniosa.',
+    },
+    {
+      id: 8,
+      pais: 'Vietnã',
+      paisurl: 'vietna',
+      regiao: 'Sudeste Asiático',
+      tempovisa: '3 meses',
+      foto: `${this.baseUrl}ho-chi-minh.png`,
+      cidade: 'Ho Chi Minh',
+      custodevida: 'R$2500-R$4500+ Reais',
+      descricao:
+        'O Vietnã é um país exótico que oferece uma fusão intrigante de história rica, culinária deliciosa e paisagens diversas. Ho Chi Minh, a maior cidade do país, possui uma mistura de cultura tradicional e modernidade, com uma cena crescente de coworking. As belezas naturais do Vietnã vão desde as praias deslumbrantes de Da Nang até as montanhas de Sapa. A comida vietnamita é renomada internacionalmente, oferecendo uma experiência gastronômica única. Com custos de vida acessíveis e um ambiente vibrante, o Vietnã atrai nômades digitais em busca de uma combinação única de trabalho e aventura.',
+    },
+    {
+      id: 9,
+      pais: 'Espanha',
+      paisurl: 'espanha',
+      regiao: 'Europa',
+      tempovisa: '90 dias',
+      foto: `${this.baseUrl}barcelona.png`,
+      cidade: 'Barcelona',
+      custodevida: 'R$7200-R$10500+ Reais',
+      descricao:
+        'A Espanha é um país cativante, conhecido por sua cultura vibrante, praias deslumbrantes e cidades históricas. Barcelona, uma das cidades mais famosas da Espanha, oferece uma mistura única de arquitetura modernista e estilo de vida descontraído. Com uma cena de coworking em crescimento e uma rica herança cultural, a cidade proporciona um ambiente inspirador para nômades digitais. Além disso, a Espanha oferece uma culinária diversificada, festivais animados e paisagens variadas, desde as montanhas dos Pirineus até as ilhas ensolaradas das Canárias.',
+    },
+    {
+      id: 10,
+      pais: 'Indonésia',
+      paisurl: 'indonesia',
+      regiao: 'Sudeste Asiático',
+      tempovisa: '30 dias (visa on arrival)',
+      foto: `${this.baseUrl}bali.png`,
+      cidade: 'Bali',
+      custodevida: 'R$2800-R$5500+ Reais',
+      descricao:
+        'A Indonésia é um paraíso tropical atraente para nômades digitais em busca de beleza natural e espiritualidade. Bali, conhecida por suas praias exuberantes e atmosfera relaxante, é um destino popular entre os nômades digitais. Com uma cena de coworking vibrante e retiros espirituais, Bali oferece um ambiente propício para trabalho e relaxamento. Além disso, a rica cultura balinesa, as atividades ao ar livre, como surfe e yoga, e os templos majestosos acrescentam uma dimensão única à experiência de nômade digital.',
+    },
+    {
+      id: 11,
+      pais: 'Canadá',
+      paisurl: 'canada',
+      regiao: 'América do Norte',
+      tempovisa: '6 meses',
+      foto: `${this.baseUrl}vancouver.png`,
+      cidade: 'Vancouver',
+      custodevida: 'R$8000-R$13000+ Reais',
+      descricao:
+        'O Canadá oferece um ambiente acolhedor para nômades digitais que desejam explorar vastas paisagens e cidades modernas. Vancouver, situada entre o oceano e as montanhas, é uma cidade cosmopolita com uma cena de tecnologia em crescimento. A beleza natural da região, incluindo o Parque Stanley, oferece oportunidades para atividades ao ar livre. Além disso, o Canadá é conhecido por sua qualidade de vida, educação de qualidade e diversidade cultural, tornando-o um destino atraente para nômades digitais em busca de uma experiência equilibrada.',
+    },
+    {
+      id: 12,
+      pais: 'Grécia',
+      paisurl: 'grecia',
+      regiao: 'Europa',
+      tempovisa: '90 dias',
+      foto: `${this.baseUrl}atenas.png`,
+      cidade: 'Atenas',
+      custodevida: 'R$5600-R$9800+ Reais',
+      descricao:
+        'A Grécia oferece uma mistura encantadora de história antiga, praias deslumbrantes e uma atmosfera relaxada. Atenas, a capital, é uma cidade rica em cultura e história, com sítios arqueológicos icônicos, como a Acrópole. Com uma cena emergente de tecnologia e espaços de coworking, a Grécia oferece oportunidades para nômades digitais. As ilhas gregas, com suas águas cristalinas e charme pitoresco, proporcionam um refúgio tranquilo para relaxamento e inspiração.',
+    },
+    {
+      id: 13,
+      pais: 'Austrália',
+      paisurl: 'australia',
+      regiao: 'Oceania',
+      tempovisa: '3 meses (eVisitor)',
+      foto: `${this.baseUrl}sydney.png`,
+      cidade: 'Sydney',
+      custodevida: 'R$10000-R$16000+ Reais',
+      descricao:
+        'A Austrália oferece uma combinação única de vida urbana moderna e belezas naturais impressionantes. Sydney, com seu famoso porto e estilo de vida descontraído, é uma cidade atraente para nômades digitais. Com uma economia forte e uma cena de tecnologia em crescimento, a Austrália oferece oportunidades de trabalho e exploração. Além disso, as vastas paisagens, como a Grande Barreira de Coral e as montanhas azuis, proporcionam aventuras emocionantes para quem procura um equilíbrio entre trabalho e lazer.',
+    },
+    {
+      id: 14,
+      pais: 'Japão',
+      paisurl: 'japao',
+      regiao: 'Ásia',
+      tempovisa: '90 dias',
+      foto: `${this.baseUrl}toquio.png`,
+      cidade: 'Tóquio',
+      custodevida: 'R$9500-R$15000+ Reais',
+      descricao:
+        'O Japão oferece uma experiência única de modernidade e tradição, tornando-o um destino intrigante para nômades digitais. Tóquio, a capital, é uma metrópole futurista, conhecida por sua tecnologia de ponta e cultura pop. A cidade oferece uma cena de coworking em crescimento e oportunidades de exploração cultural. Além disso, as cidades históricas, como Quioto, e as belas paisagens naturais, como o Monte Fuji, enriquecem a experiência de viver no Japão.',
+    },
+    {
+      id: 15,
+      pais: 'Colômbia',
+      paisurl: 'colombia',
+      regiao: 'América do Sul',
+      tempovisa: '3 meses',
+      foto: `${this.baseUrl}medellin.png`,
+      cidade: 'Medellín',
+      custodevida: 'R$3000-R$6000+ Reais',
+      descricao:
+        'A Colômbia é um país fascinante com uma mistura única de cidades modernas e paisagens diversas. Medellín, conhecida por sua transformação urbana e clima agradável, é uma cidade popular entre nômades digitais. Com uma cena de tecnologia em ascensão e uma vibração cultural vibrante, a Colômbia oferece um ambiente inspirador para trabalhar e explorar. Além disso, as belezas naturais, como a região do café e as praias caribenhas, proporcionam uma ampla gama de experiências.',
     },
   ];
 

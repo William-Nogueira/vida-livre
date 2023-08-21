@@ -23,6 +23,10 @@ a {
   gap: 4px;
 }
 
+.logo {
+  margin-top: -4px;
+}
+
 .nav-list {
   display: flex;
   gap: 9px;
@@ -30,7 +34,7 @@ a {
 }
 
 .nav-link {
-  font-size: 1.05rem;
+  font-size: 1rem;
   color: #232115;
   letter-spacing: 0.75px;
   font-weight: 600;
@@ -56,9 +60,11 @@ a {
 
 .nav-link:hover {
   color: rgb(20, 175, 85);
+  fill: green;
 }
 
-.nav-out {
-  font-size: 22px;
+svg {
   margin-top: -4px;
+  width: 19px;
+  height: 19px;
 }

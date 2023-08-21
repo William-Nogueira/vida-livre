@@ -3,10 +3,12 @@
         <div class="main-text">
             <h1>Desbrave Novos Horizontes com o Nomadismo Digital</h1>
             <p>Trabalhe, Explore, Viva - Descubra a liberdade de trabalhar remotamente enquanto viaja pelo mundo.</p>
-            <p class="padding-bottom">Aqui você pode encontrar informações sobre diferentes destinos e vistos.
+            <p class="padding-bottom" id="focus">Aqui você pode encontrar informações sobre diferentes destinos e
+                vistos.
                 Recolhemos informações sobre
                 todos os países que lhe permitem viajar e permanecer por um longo período.</p>
-            <input type="text" placeholder="Buscar país" #filter (keyup)="filterResults(filter.value)">
+            <input type="text" placeholder="Buscar país" #filter (keyup)="filterResults(filter.value)"
+                (click)="searchFieldInteracted()">
             <button class="primary" type="button" (click)="filterResults(filter.value)">Buscar</button>
         </div>
     </div>

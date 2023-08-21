@@ -13,4 +13,18 @@ export class HeroComponent {
   filterResults(text: string) {
     this.filterService.setFilterValue(text);
   }
+
+  searchFieldInteracted() {
+    this.scrollDown(300);
+  }
+
+  private scrollDown(offset: number) {
+    const resultsElement = document.getElementById('results');
+    if (resultsElement) {
+      resultsElement.scrollIntoView({ behavior: 'smooth' });
+      const scrollPosition =
+        window.scrollY + resultsElement.getBoundingClientRect().top - offset;
+      window.scrollTo({ top: scrollPosition, behavior: 'smooth' });
+    }
+  }
 }

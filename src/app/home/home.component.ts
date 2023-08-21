@@ -31,6 +31,8 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.PaisList = this.paisService.getAllPais();
 
+    this.PaisList.sort((a, b) => a.pais.localeCompare(b.pais));
+
     this.filterService.filterValue$.subscribe((filter) => {
       const normalizedFilter = normalize(filter);
 
