@@ -1,5 +1,70 @@
+@import url("https://fonts.googleapis.com/css?family=Alegreya:wght@400,500,600,700|Raleway:wght@400,500,600,700");
+
+.card {
+  background-color: white;
+  box-shadow: 0 0 3px rgba(13, 27, 44, 0.25);
+  border-radius: 10px 10px 5px 5px;
+  padding-bottom: 13px;
+}
+
+.card:hover {
+  transition: all 0.3s ease;
+  box-shadow: 0 0.2rem 0.7rem rgba(0, 0, 0, 0.15);
+}
+
+.card-container {
+  padding: 0 26px;
+}
+
 .foto {
-  height: 250px;
+  height: 235px;
   width: 100%;
   border-radius: 10px 10px 0 0;
+}
+
+.pais {
+  color: #232115;
+  margin-top: 14px;
+  margin-bottom: 2px;
+  font-size: 21.5px;
+}
+
+.custo {
+  color: #34323b;
+  margin-top: 14px;
+  margin-bottom: 4px;
+  font-size: 16px;
+}
+
+.regiao {
+  color: rgb(118, 124, 134);
+  margin-bottom: 16px;
+  font-size: 15px;
+}
+
+.valor {
+  color: rgb(118, 124, 134);
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.conheca {
+  color: #2b23c4;
+  padding-bottom: 10px;
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+svg {
+  margin-left: 3px;
+  width: 10px;
+  height: 14px;
 }

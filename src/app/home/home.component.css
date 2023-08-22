@@ -1,10 +1,13 @@
 .results {
   display: grid;
-  column-gap: 14px;
-  row-gap: 14px;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
-  margin-top: 50px;
-  justify-content: space-around;
+  column-gap: 18px;
+  row-gap: 28px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 350px));
+  margin: auto;
+  justify-content: space-evenly;
+  max-width: 1650px;
+  width: 100%;
+  padding: 50px 25px;
 }
 
 input[type="text"] {
