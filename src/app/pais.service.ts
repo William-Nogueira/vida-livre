@@ -14,7 +14,8 @@ export class PaisService {
       paisurl: 'portugal',
       regiao: 'Europa',
       tempovisa: '1 ano',
-      foto: `${this.baseUrl}lisboa.png`,
+      fotofull: `${this.baseUrl}/full/lisboa.png`,
+      fotocard: `${this.baseUrl}/card/lisboa.png`,
       cidade: 'Lisboa',
       custodevida: 'R$5.400 - R$9.900',
       descricao:
@@ -26,7 +27,8 @@ export class PaisService {
       paisurl: 'tailandia',
       regiao: 'Sudeste Asiático',
       tempovisa: '1 ano',
-      foto: `${this.baseUrl}bangkok.png`,
+      fotofull: `${this.baseUrl}/full/bangkok.png`,
+      fotocard: `${this.baseUrl}/card/bangkok.png`,
       cidade: 'Bangkok',
       custodevida: 'R$3.000 - R$7.000',
       descricao:
@@ -38,7 +40,8 @@ export class PaisService {
       paisurl: 'costa-rica',
       regiao: 'América Central',
       tempovisa: '2 anos',
-      foto: `${this.baseUrl}costa-rica.png`,
+      fotofull: `${this.baseUrl}/full/costa-rica.png`,
+      fotocard: `${this.baseUrl}/card/costa-rica.png`,
       cidade: 'San Jose',
       custodevida: 'R$4.500 - R$8.000',
       descricao:
@@ -50,7 +53,8 @@ export class PaisService {
       paisurl: 'mexico',
       regiao: 'América do Norte',
       tempovisa: '4 anos',
-      foto: `${this.baseUrl}playa-del-carmen.png`,
+      fotofull: `${this.baseUrl}/full/playa-del-carmen.png`,
+      fotocard: `${this.baseUrl}/card/playa-del-carmen.png`,
       cidade: 'Playa del Carmen',
       custodevida: 'R$3.600 - R$6.500',
       descricao:
@@ -62,7 +66,8 @@ export class PaisService {
       paisurl: 'malasia',
       regiao: 'Sudeste Asiático',
       tempovisa: '5 anos',
-      foto: `${this.baseUrl}kuala-lumpur.png`,
+      fotofull: `${this.baseUrl}/full/kuala-lumpur.png`,
+      fotocard: `${this.baseUrl}/card/kuala-lumpur.png`,
       cidade: 'Kuala Lumpur',
       custodevida: 'R$3.000 - R$5.500',
       descricao:
@@ -74,7 +79,8 @@ export class PaisService {
       paisurl: 'estonia',
       regiao: 'Europa',
       tempovisa: '5 anos',
-      foto: `${this.baseUrl}tallinn.png`,
+      fotofull: `${this.baseUrl}/full/tallinn.png`,
+      fotocard: `${this.baseUrl}/card/tallinn.png`,
       cidade: 'Tallinn',
       custodevida: 'R$4.500 - R$7.500',
       descricao:
@@ -86,7 +92,8 @@ export class PaisService {
       paisurl: 'irlanda',
       regiao: 'Europa',
       tempovisa: '1 ano',
-      foto: `${this.baseUrl}dublin.png`,
+      fotofull: `${this.baseUrl}/full/dublin.png`,
+      fotocard: `${this.baseUrl}/card/dublin.png`,
       cidade: 'Dublin',
       custodevida: 'R$9.900 - R$13.500',
       descricao:
@@ -98,7 +105,8 @@ export class PaisService {
       paisurl: 'argentina',
       regiao: 'América do Sul',
       tempovisa: '2 anos',
-      foto: `${this.baseUrl}buenos-aires.png`,
+      fotofull: `${this.baseUrl}/full/buenos-aires.png`,
+      fotocard: `${this.baseUrl}/card/buenos-aires.png`,
       cidade: 'Buenos Aires',
       custodevida: 'R$2.700 - R$5.000',
       descricao:
@@ -110,7 +118,8 @@ export class PaisService {
       paisurl: 'vietna',
       regiao: 'Sudeste Asiático',
       tempovisa: '3 meses',
-      foto: `${this.baseUrl}ho-chi-minh.png`,
+      fotofull: `${this.baseUrl}/full/ho-chi-minh.png`,
+      fotocard: `${this.baseUrl}/card/ho-chi-minh.png`,
       cidade: 'Ho Chi Minh',
       custodevida: 'R$2.500 - R$4.500',
       descricao:
@@ -122,7 +131,8 @@ export class PaisService {
       paisurl: 'espanha',
       regiao: 'Europa',
       tempovisa: '90 dias',
-      foto: `${this.baseUrl}barcelona.png`,
+      fotofull: `${this.baseUrl}/full/barcelona.png`,
+      fotocard: `${this.baseUrl}/card/barcelona.png`,
       cidade: 'Barcelona',
       custodevida: 'R$7.200 - R$10.500',
       descricao:
@@ -134,7 +144,8 @@ export class PaisService {
       paisurl: 'indonesia',
       regiao: 'Sudeste Asiático',
       tempovisa: '30 dias (visa on arrival)',
-      foto: `${this.baseUrl}bali.png`,
+      fotofull: `${this.baseUrl}/full/bali.png`,
+      fotocard: `${this.baseUrl}/card/bali.png`,
       cidade: 'Bali',
       custodevida: 'R$2.800 - R$5.500',
       descricao:
@@ -146,7 +157,8 @@ export class PaisService {
       paisurl: 'canada',
       regiao: 'América do Norte',
       tempovisa: '6 meses',
-      foto: `${this.baseUrl}vancouver.png`,
+      fotofull: `${this.baseUrl}/full/vancouver.png`,
+      fotocard: `${this.baseUrl}/card/vancouver.png`,
       cidade: 'Vancouver',
       custodevida: 'R$8.000 - R$13.000',
       descricao:
@@ -158,7 +170,8 @@ export class PaisService {
       paisurl: 'grecia',
       regiao: 'Europa',
       tempovisa: '90 dias',
-      foto: `${this.baseUrl}atenas.png`,
+      fotofull: `${this.baseUrl}/full/atenas.png`,
+      fotocard: `${this.baseUrl}/card/atenas.png`,
       cidade: 'Atenas',
       custodevida: 'R$5.600 - R$9.800',
       descricao:
@@ -170,7 +183,8 @@ export class PaisService {
       paisurl: 'australia',
       regiao: 'Oceania',
       tempovisa: '3 meses (eVisitor)',
-      foto: `${this.baseUrl}sydney.png`,
+      fotofull: `${this.baseUrl}/full/sydney.png`,
+      fotocard: `${this.baseUrl}/card/sydney.png`,
       cidade: 'Sydney',
       custodevida: 'R$10.000 - R$16.000',
       descricao:
@@ -182,7 +196,8 @@ export class PaisService {
       paisurl: 'japao',
       regiao: 'Ásia',
       tempovisa: '90 dias',
-      foto: `${this.baseUrl}toquio.png`,
+      fotofull: `${this.baseUrl}/full/toquio.png`,
+      fotocard: `${this.baseUrl}/card/toquio.png`,
       cidade: 'Tóquio',
       custodevida: 'R$9.500 - R$15.000',
       descricao:
@@ -194,7 +209,8 @@ export class PaisService {
       paisurl: 'colombia',
       regiao: 'América do Sul',
       tempovisa: '3 meses',
-      foto: `${this.baseUrl}medellin.png`,
+      fotofull: `${this.baseUrl}/full/medellin.png`,
+      fotocard: `${this.baseUrl}/card/medellin.png`,
       cidade: 'Medellín',
       custodevida: 'R$3.000 - R$6.000',
       descricao:

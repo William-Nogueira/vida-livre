@@ -4,7 +4,8 @@ export interface Pais {
   paisurl: string;
   regiao: string;
   tempovisa: string;
-  foto: string;
+  fotofull: string;
+  fotocard: string;
   cidade: string;
   custodevida: string;
   descricao: string;
