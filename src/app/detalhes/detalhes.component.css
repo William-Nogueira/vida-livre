@@ -1,13 +1,72 @@
 .flex {
   display: flex;
 }
+
 .foto {
-  height: 650px;
-  width: 100%;
-  border-radius: 10px 10px 0 0;
+  border-radius: 8px;
+  display: block;
+  margin: auto;
 }
 
 .arrow {
   width: 50px;
   height: 50px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1550px;
+  min-height: 775px;
+  width: 100%;
+  padding: 50px 25px;
+  margin: auto;
+  gap: 35px;
+}
+
+.pais {
+  font-size: 35px;
+  margin-bottom: 2.5px;
+}
+
+.regiao {
+  color: rgb(118, 124, 134);
+  margin-bottom: 13px;
+  font-size: 18px;
+}
+
+.descricao {
+  color: #34323b;
+  margin-top: 20px;
+  margin-bottom: 4px;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0.2px;
+}
+
+.info-container {
+  margin-top: 60px;
+  display: grid;
+  column-gap: 2rem;
+  row-gap: 2.5rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.info {
+  padding-top: 12px;
+  border-color: rgb(229 231 235);
+  border-width: 0;
+  border-top-width: 1px;
+  border-style: solid;
+}
+
+.info-header {
+  color: #34323b;
+}
+
+.info-detalhes {
+  color: rgb(90, 95, 104);
+  font-size: 0.95rem;
+  line-height: 1.25rem;
+  margin-top: 0.5rem;
 }

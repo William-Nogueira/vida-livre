@@ -1,12 +1,37 @@
-<article class="flex">
-    <a [routerLink]="['/']"><img class="arrow" src="/assets/go-back-arrow.svg" alt="Voltar"></a>
+<article class="container">
+    <a class="arrow" [routerLink]="['/']"><img class="arrow" src="/assets/go-back-arrow.svg" alt="Voltar"></a>
     <section>
-        <h2>{{ Pais?.pais }}</h2>
-        <p>{{ Pais?.cidade }}, {{ Pais?.regiao }}</p>
-    </section>
-    <section>
-        <h2>Sobre</h2>
-        <p>{{ Pais?.descricao }}</p>
+        <div>
+            <h2 class="pais">{{ Pais?.pais }}</h2>
+            <p class="regiao">{{ Pais?.regiao }}</p>
+            <p class="descricao">{{ Pais?.descricao }}</p>
+        </div>
+        <div class="info-container">
+            <div class="info">
+                <h3 class="info-header">Tempo de Visa</h3>
+                <p class="info-detalhes">{{ Pais?.tempovisa }}</p>
+            </div>
+            <div class="info">
+                <h3 class="info-header">Clima</h3>
+                <p class="info-detalhes">{{ Pais?.temperatura }}</p>
+            </div>
+            <div class="info">
+                <h3 class="info-header">Wi-Fi</h3>
+                <p class="info-detalhes">{{ Pais?.internet }}</p>
+            </div>
+            <div class="info">
+                <h3 class="info-header">Cidade Recomendada</h3>
+                <p class="info-detalhes">{{ Pais?.cidade }}</p>
+            </div>
+            <div class="info">
+                <h3 class="info-header">Custo de Vida</h3>
+                <p class="info-detalhes">{{ Pais?.custodevida }}</p>
+            </div>
+            <div class="info">
+                <h3 class="info-header">Idioma</h3>
+                <p class="info-detalhes">{{ Pais?.lingua }}</p>
+            </div>
+        </div>
     </section>
     <img class="foto" [src]="Pais?.fotofull" alt="{{ Pais?.pais }}" />
 </article>

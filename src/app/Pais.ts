@@ -8,5 +8,8 @@ export interface Pais {
   fotocard: string;
   cidade: string;
   custodevida: string;
+  temperatura: string;
+  lingua: string;
+  internet: string;
   descricao: string;
 }
