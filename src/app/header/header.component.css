@@ -21,6 +21,7 @@ a {
   display: flex;
   align-items: center;
   gap: 4px;
+  justify-content: center;
 }
 
 .logo {
@@ -42,22 +43,6 @@ a {
   padding: 25px 0 25px 50px;
 }
 
-@media (max-width: 800px) {
-  nav {
-    margin: 0px auto;
-  }
-}
-
-@media (max-width: 350px) {
-  .nav-link {
-    padding: 0;
-  }
-  .container-nav {
-    padding-left: 0;
-    padding-right: 8px;
-  }
-}
-
 .nav-link:hover {
   color: rgb(20, 175, 85);
   fill: green;
@@ -67,4 +52,61 @@ svg {
   margin-top: -4px;
   width: 19px;
   height: 19px;
+}
+
+/* Hamburger Menu */
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease;
+  background-color: #3c4858;
+}
+
+@media (max-width: 960px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-list {
+    position: fixed;
+    right: -100%;
+    top: 90px;
+    gap: 0px;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 60%;
+    text-align: center;
+    transition: 0.3s ease;
+    z-index: 999;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-list.active {
+    right: 0;
+  }
+  svg {
+    display: none;
+  }
 }
