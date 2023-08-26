@@ -5,6 +5,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 import { HeroComponent } from './hero/hero.component';
 import { Pais } from './Pais';
 import { CommonModule } from '@angular/common';
+import { FooterComponent } from './footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -18,6 +19,7 @@ import { CommonModule } from '@angular/common';
     RouterLink,
     RouterOutlet,
     HeroComponent,
+    FooterComponent,
   ],
 })
 export class AppComponent {

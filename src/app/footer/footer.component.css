@@ -1,0 +1,15 @@
+#footer {
+  text-align: center;
+  padding: 30px 0 10px 0;
+  color: rgb(67, 71, 78);
+}
+
+#footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+#footer a {
+  color: #2350af;
+  text-decoration: underline;
+}
