@@ -15,11 +15,11 @@ export class HeroComponent {
   }
 
   searchFieldInteracted() {
-    this.scrollDown(190);
+    this.scrollDown(70);
   }
 
   private scrollDown(offset: number) {
-    const resultsElement = document.getElementById('results');
+    const resultsElement = document.getElementById('pais');
     if (resultsElement) {
       resultsElement.scrollIntoView({ behavior: 'smooth' });
       const scrollPosition =

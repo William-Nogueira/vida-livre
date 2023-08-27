@@ -17,7 +17,7 @@ section {
 .main-text h1 {
   font-size: 67px;
   color: #232115;
-  margin-bottom: 27px;
+  margin-bottom: 35px;
   line-height: 77px;
 }
 
@@ -31,7 +31,7 @@ section {
 }
 
 #focus {
-  padding-bottom: 45px;
+  padding-bottom: 55px;
   max-width: 90%;
 }
 
@@ -123,7 +123,7 @@ button.primary {
   background: #147c60;
   color: white;
   border-radius: 4px;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
   cursor: pointer;
 }
 
@@ -133,7 +133,7 @@ button.primary:hover {
 }
 
 @media (max-width: 500px) {
-  button.primary {
-    margin-bottom: 60px;
+  #focus {
+    padding-bottom: 45px;
   }
 }
