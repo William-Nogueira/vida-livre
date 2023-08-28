@@ -8,6 +8,7 @@
   margin: auto;
   max-width: 100%;
   height: auto;
+  margin-top: 25px;
 }
 
 .placeholder {
@@ -112,4 +113,12 @@
   font-size: 0.97rem;
   line-height: 1.25rem;
   margin-top: 0.5rem;
+}
+
+figcaption {
+  font-size: 17px;
+  margin-top: 10px;
+  text-align: center;
+  color: rgb(60, 63, 70);
+  font-style: italic;
 }
