@@ -15,7 +15,7 @@ export class HeroComponent {
   }
 
   searchFieldInteracted() {
-    this.scrollDown(70);
+    this.scrollDown(100);
   }
 
   private scrollDown(offset: number) {

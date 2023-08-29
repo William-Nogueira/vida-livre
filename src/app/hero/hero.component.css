@@ -79,6 +79,9 @@ section {
     font-size: 16px;
     line-height: 24px;
   }
+  #pais {
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 330px) {

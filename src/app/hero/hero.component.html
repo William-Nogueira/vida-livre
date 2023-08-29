@@ -7,8 +7,8 @@
                 vistos.
                 Recolhemos informações sobre
                 todos os países que lhe permitem viajar e permanecer por um longo período.</p>
-            <input type="text" placeholder="Buscar país" id="pais" #filter (keyup)="filterResults(filter.value)"
-                (focus)="searchFieldInteracted()">
+            <input type="text" placeholder="Buscar país ou cidade" id="pais" #filter
+                (keyup)="filterResults(filter.value)" (click)="searchFieldInteracted()">
             <button class="primary" type="button" (click)="filterResults(filter.value)">Buscar</button>
         </div>
     </div>

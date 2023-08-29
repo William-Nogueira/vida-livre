@@ -11,6 +11,10 @@
   padding: 50px 25px;
 }
 
+p {
+  font-size: 20px;
+}
+
 input[type="text"] {
   border: solid 1px var(--primary-color);
   padding: 10px;

@@ -1,4 +1,9 @@
-<section class="results" id="results" #results>
-    <app-card *ngFor="let Pais of filterPaisList" [Pais]="Pais">
-    </app-card>
+<section class="results" id="results">
+    <ng-container *ngIf="filterPaisList.length > 0; else noResults">
+        <app-card *ngFor="let Pais of filterPaisList" [Pais]="Pais">
+        </app-card>
+    </ng-container>
+    <ng-template #noResults>
+        <p>Nenhum resultado foi encontrado</p>
+    </ng-template>
 </section>

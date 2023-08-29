@@ -26,19 +26,14 @@ export class AppComponent {
   title = 'vidalivre';
   PaisList: Pais[] = [];
   filterPaisList: Pais[] = [];
+
   filterResults(text: string) {
     if (!text) {
       this.filterPaisList = this.PaisList;
     }
 
     this.filterPaisList = this.PaisList.filter((Pais) =>
-      Pais?.cidade.toLowerCase().includes(text.toLowerCase())
+      Pais?.pais.toLowerCase().includes(text.toLowerCase())
     );
-  }
-
-  isHeroVisible = true;
-
-  toggleHeroVisibility() {
-    this.isHeroVisible = !this.isHeroVisible;
   }
 }

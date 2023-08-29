@@ -36,8 +36,10 @@ export class HomeComponent implements OnInit {
     this.filterService.filterValue$.subscribe((filter) => {
       const normalizedFilter = normalize(filter);
 
-      this.filterPaisList = this.PaisList.filter((Pais) =>
-        normalize(Pais?.pais).includes(normalizedFilter)
+      this.filterPaisList = this.PaisList.filter(
+        (Pais) =>
+          normalize(Pais?.pais).includes(normalizedFilter) ||
+          normalize(Pais?.cidade).includes(normalizedFilter)
       );
     });
   }
