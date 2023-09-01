@@ -1,9 +1,8 @@
 import { Component, inject } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { ActivatedRoute } from '@angular/router';
+import { CommonModule, Location } from '@angular/common';
+import { ActivatedRoute, RouterLink, RouterOutlet } from '@angular/router';
 import { PaisService } from '../pais.service';
 import { Pais } from '../Pais';
-import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-detalhes',
@@ -17,8 +16,12 @@ export class DetalhesComponent {
   PaisService = inject(PaisService);
   Pais: Pais | undefined;
 
-  constructor() {
+  constructor(private location: Location) {
     const PaisUrl = String(this.route.snapshot.params['paisurl']);
     this.Pais = this.PaisService.getPaisByUrl(PaisUrl);
+  }
+
+  back(): void {
+    this.location.back();
   }
 }

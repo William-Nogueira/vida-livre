@@ -1,5 +1,5 @@
 <article class="container">
-    <a class="arrow" [routerLink]="['/']"><img class="arrow" src="/assets/go-back-arrow.svg" alt="Voltar"></a>
+    <a class="arrow" (click)="back()"><img class="arrow" src="/assets/go-back-arrow.svg" alt="Voltar"></a>
     <section>
         <div>
             <h2 class="pais">{{ Pais?.pais }}</h2>
