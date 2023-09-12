@@ -1,5 +1,5 @@
 section {
-  background-image: url(/assets/background.jpg);
+  background-image: url(/assets/background.webp);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -32,7 +32,7 @@ section {
 
 #focus {
   padding-bottom: 55px;
-  max-width: 90%;
+  max-width: 92%;
 }
 
 @media (max-width: 1100px) {
