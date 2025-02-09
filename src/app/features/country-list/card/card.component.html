@@ -1,0 +1,21 @@
+<a (click)="openDetails(pais?.paisurl)">
+    <section class="card">
+        <img class="foto" [src]="pais?.fotocard" alt="{{ pais?.pais }}" loading="eager" />
+        <div class="card-container">
+            <h3 class="pais">{{ pais?.pais }}</h3>
+            <p class="regiao">{{ pais?.regiao }}</p>
+            <div class="card-bottom">
+                <div>
+                    <h4 class="custo">Custo de Vida</h4>
+                    <p class="valor">{{ pais?.custodevida }}</p>
+                </div>
+                <div>
+                    <h4 class="custo">&nbsp;</h4>
+                    <p class="conheca">Conheça
+                        <img class="svg" src="assets/right-arrow.svg" alt="Conheça">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</a>

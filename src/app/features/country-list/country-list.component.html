@@ -1,0 +1,10 @@
+<section class="results" id="results">
+    @if (filteredPaisList().length > 0) {
+        @for (pais of filteredPaisList(); track pais.cidade) {
+            <app-card [pais]="pais"></app-card>
+        }
+    }
+    @else {
+        <p>Nenhum resultado foi encontrado</p>
+    }
+</section>

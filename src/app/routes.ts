@@ -1,16 +1,16 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { DetalhesComponent } from './detalhes/detalhes.component';
+import { DetailsComponent } from './features/country-details/details.component';
+import { CountryListComponent } from './features/country-list/country-list.component';
 
 const routeConfig: Routes = [
   {
     path: '',
-    component: HomeComponent,
+    component: CountryListComponent,
     title: 'Vida Livre',
   },
   {
-    path: ':paisurl',
-    component: DetalhesComponent,
+    path: ':countryUrl',
+    component: DetailsComponent,
     title: 'Vida Livre - Detalhes',
   },
 ];

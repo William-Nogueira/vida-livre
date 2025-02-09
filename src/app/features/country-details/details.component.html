@@ -1,0 +1,22 @@
+<article class="container">
+    <a #arrowElement class="arrow" (click)="back()"><img class="arrow" src="/assets/go-back-arrow.svg" alt="Voltar"></a>
+    <section>
+        <div>
+            <h2 class="pais">{{ pais()?.pais }}</h2>
+            <p class="regiao">{{ pais()?.regiao }}</p>
+            <p class="descricao">{{ pais()?.descricao }}</p>
+        </div>
+        <div class="info-container">
+            @for(item of infoItems; track item.header && item.property) {
+                <div class="info">
+                    <h3 class="info-header">{{ item.header }}</h3>
+                    <p class="info-detalhes">{{ pais()?.[item.property] }}</p>
+                </div>
+            }
+        </div>
+    </section>
+    <figure class="placeholder">
+        <img class="foto" [src]="pais()?.fotofull" alt="{{ pais()?.cidade }}" />
+        <figcaption>{{ pais()?.cidade }}</figcaption>
+    </figure>
+</article>

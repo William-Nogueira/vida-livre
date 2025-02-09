@@ -1,7 +1,13 @@
 section {
-  background-image: url(/assets/background.webp);
+  background-image: url(/assets/background-large.webp);
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 2000px) {
+  section {
+    background-image: url(/assets/background.webp);
+  }
 }
 
 .hero-container {

@@ -1,39 +1,18 @@
 import { Component } from '@angular/core';
-import { HomeComponent } from './home/home.component';
-import { HeaderComponent } from './header/header.component';
-import { RouterLink, RouterOutlet } from '@angular/router';
-import { HeroComponent } from './hero/hero.component';
-import { Pais } from './Pais';
-import { CommonModule } from '@angular/common';
-import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './core/layout/header/header.component';
+import { RouterOutlet } from '@angular/router';
+import { HeroComponent } from './core/layout/hero/hero.component';
+import { FooterComponent } from './core/layout/footer/footer.component';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
-  imports: [
-    CommonModule,
-    HomeComponent,
-    HeaderComponent,
-    RouterLink,
-    RouterOutlet,
-    HeroComponent,
-    FooterComponent,
-  ],
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.css'],
+    imports: [
+        HeaderComponent,
+        RouterOutlet,
+        HeroComponent,
+        FooterComponent,
+    ]
 })
-export class AppComponent {
-  title = 'vidalivre';
-  PaisList: Pais[] = [];
-  filterPaisList: Pais[] = [];
-
-  filterResults(text: string) {
-    if (!text) {
-      this.filterPaisList = this.PaisList;
-    }
-
-    this.filterPaisList = this.PaisList.filter((Pais) =>
-      Pais?.pais.toLowerCase().includes(text.toLowerCase())
-    );
-  }
-}
+export class AppComponent {}
